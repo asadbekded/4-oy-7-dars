@@ -25,13 +25,6 @@ books.forEach((film) => {
    newItem.appendChild(newText)
    newItem.appendChild(newNum)
 })
-
-
-
-
-
-
-
 //------------------------------------------dark and red mode codes btn begin-----------------------------------------
 
 const elModeBtn = document.querySelector('.mode-btn')

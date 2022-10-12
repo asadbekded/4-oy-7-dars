@@ -10,14 +10,20 @@
    color: aqua;
    margin-bottom: 30px;
 }
-
+h4{
+   font-family: 'Arial';
+   margin-bottom: 15px;
+}
+h5{
+   font-family: 'Arial';
+}
 .js-list{
    display: flex;
    align-items: flex-start;
    justify-content: space-between;
    flex-wrap: wrap;
    padding: 0px;
-   margin: 0px;
+   margin: 0px;   
    margin-top: 30px;
    list-style: none;
 }
@@ -30,4 +36,23 @@ li{
    border-radius: 25px;
    box-shadow: 2px -1px 66px -12px #158ab1;
    color: #fff;
+}
+li:hover{
+   opacity: 0.9;
+   color: #f6de55;
+}
+span{
+   font-family: 'Arial';
+   display: block;
+   margin-bottom: 5px;
+}
+p{
+   font-family: 'Arial';
+   margin: 0px;
+   margin-bottom: 6px;
+}
+strong{
+   font-family: 'Arial';
+   display: block;
+   margin: 0px;
 }
