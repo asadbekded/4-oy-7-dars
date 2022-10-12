@@ -1,0 +1,33 @@
+.container{
+   width: 100%;
+   max-width: 1200px;
+   margin: 0px auto;
+   padding: 0px 20px;
+}
+.book-title{
+   font-family: 'Arial';
+   text-align: center;
+   color: aqua;
+   margin-bottom: 30px;
+}
+
+.js-list{
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 0px;
+   margin: 0px;
+   margin-top: 30px;
+   list-style: none;
+}
+
+li{
+   width: 350px;
+   margin-bottom: 25px;
+   padding: 8px 10px 15px 18px;
+   background-color: #158ab1;
+   border-radius: 25px;
+   box-shadow: 2px -1px 66px -12px #158ab1;
+   color: #fff;
+}
