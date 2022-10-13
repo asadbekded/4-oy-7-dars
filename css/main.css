@@ -11,11 +11,15 @@
    margin-bottom: 30px;
 }
 h4{
+   margin-top: 18px;
    font-family: 'Arial';
    margin-bottom: 15px;
+   padding-left: 18px;
 }
 h5{
+   padding-left: 18px;
    font-family: 'Arial';
+   margin-top: 20px;
 }
 .js-list{
    display: flex;
@@ -31,28 +35,27 @@ h5{
 li{
    width: 350px;
    margin-bottom: 25px;
-   padding: 8px 10px 15px 18px;
-   background-color: #158ab1;
+   background-color: #808587;
    border-radius: 25px;
-   box-shadow: 2px -1px 66px -12px #158ab1;
-   color: #fff;
+   box-shadow: 2px -1px 66px -12px #808587;
+   color: #333;
 }
-li:hover{
-   opacity: 0.9;
-   color: #f6de55;
-}
+
 span{
    font-family: 'Arial';
    display: block;
    margin-bottom: 5px;
+   padding-left: 18px;
 }
 p{
    font-family: 'Arial';
    margin: 0px;
    margin-bottom: 6px;
+   padding-left: 18px;
 }
-strong{
-   font-family: 'Arial';
-   display: block;
-   margin: 0px;
+a{
+   display: inline-block;
+   text-decoration: none;
+   padding-left: 18px;
+   margin-bottom: 15px;
 }
