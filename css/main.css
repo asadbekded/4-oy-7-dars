@@ -60,3 +60,11 @@ a{
    padding-left: 18px;
    margin-bottom: 15px;
 }
+
+select{
+   padding: 4px 0px 4px 6px;
+   background-color: rgb(42, 119, 119);
+   color: #fff;
+   margin-right: 15px;
+   margin-bottom: 20px;
+}
