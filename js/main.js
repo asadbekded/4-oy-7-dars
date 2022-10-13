@@ -1,4 +1,5 @@
 const elList = document.querySelector('.js-list');
+const elSel1 = document.querySelector('.js-select1')
 
 
 books.forEach((film) => {
@@ -36,6 +37,104 @@ books.forEach((film) => {
    newItem.appendChild(newSpan4)
    newItem.appendChild(newLink)
 })
+
+// languageni domga select orqali render qildi
+const filterList = new Set()
+
+books.forEach((item) =>{
+   filterList.add(item.language)
+})
+filterList.forEach((el) => {
+   var newOption = document.createElement('option')
+   newOption.textContent = el;
+   newOption.value = el;
+
+   elSel1.appendChild(newOption)
+})
+
+
+elSel1.addEventListener('change', function(evt) {
+   evt.preventDefault()
+   elSelVal = elSel1.value;
+   let newArr = []
+   
+   elList.innerHTML = '';
+   books.forEach((el) =>{
+      if(el.language.includes(elSelVal)){
+         newArr.push(el)
+      }
+   });
+   
+   newArr.forEach((film) => {
+      newItem = document.createElement('li')
+      newTitle = document.createElement('h4')
+      newImg = document.createElement('img')
+      newTitl = document.createElement('h5')
+      newSpan1 = document.createElement('span')
+      newSpan2 = document.createElement('span')
+      newText = document.createElement('p')
+      newSpan3 = document.createElement('span')
+      newSpan4 = document.createElement('span')
+      newLink = document.createElement('a')
+   
+      newTitle.textContent = film.title.toUpperCase()
+      newImg.src = `./images/${film.imageLink}`;
+      newImg.style.width = "100%";
+      newImg.style.height = "350px";
+      newTitl.textContent = `Author: ${film.author}`
+      newSpan1.textContent = `Country: ${film.country}`
+      newSpan2.textContent = `Language: ${film.language}`
+      newSpan3.textContent = `Pages: ${film.pages}`
+      newSpan4.textContent = `Date: ${film.year} year`
+      newLink.textContent = 'Learn-more'
+      newLink.href = film.link
+   
+      elList.appendChild(newItem)
+      newItem.appendChild(newTitle)
+      newItem.appendChild(newImg)
+      newItem.appendChild(newTitl)
+      newItem.appendChild(newSpan1)
+      newItem.appendChild(newSpan2)
+      newItem.appendChild(newText)
+      newItem.appendChild(newSpan3)
+      newItem.appendChild(newSpan4)
+      newItem.appendChild(newLink)
+   })
+})
+// languageni domga select orqali render qildi tugadi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //------------------------------------------dark and red mode codes btn begin-----------------------------------------
 
 const elModeBtn = document.querySelector('.mode-btn')
